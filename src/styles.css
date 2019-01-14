@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #CCCCCC;
+}
+
+
+/* Global **/
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header .active {
+    color: #CC0033;
+    font-weight: bold;
+}

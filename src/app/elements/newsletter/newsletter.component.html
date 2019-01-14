@@ -1,0 +1,9 @@
+<section id="newsletter">
+    <div class="container">
+        <h1>Zapisz się do naszego czasopisma</h1>
+        <form method="POST">
+            <input name="myInput" (ngModelChange)="onSubmit($event)" type="email" [(ngModel)]="value">
+            <button class="btn btn-danger mr-5 mt-5" [disabled]="isDisable">Zapisz się </button>
+        </form>
+    </div>
+</section>

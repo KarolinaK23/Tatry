@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<section class="container">
+    <div class="row">
+        <h3> Zdobyte szczyty </h3>
+    </div>
+    <form class="form-horizontal" role="form">
+        <div class="container">
+            <div class="form-group">
+                <label for="peak"><h5>Szczyt</h5></label>
+                <div class="row">
+                    <input name="peak" [(ngModel)]="newPeak" class="form control" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-danger mr-5 mt-5" (click)='add()'>Dodaj szczyt </button></div>
+    </form>
+</section>
+
+<section class="container">
+    <div class="container">
+        <ng-container *ngIf='peaksList.length > 0; else noPeaks'>
+            <ul>
+                <p> Lista zdobytych szczytów </p>
+                <li appChecked *ngFor='let peak of peaksList; let odd = odd' [ngClass]='{"odd-li": odd === true}'>
+                    {{peak | transformPeak}}
+                    <button class="btn btn-secondary btn-sm" (click)='remove(peak)'>Usuń</button>
+                </li>
+            </ul>
+        </ng-container>
+
+
+        <ng-template #noPeaks>
+            <p>Brak zdobytych szczytów</p>
+        </ng-template>
+    </div>
+</section>

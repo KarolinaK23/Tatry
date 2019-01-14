@@ -1,0 +1,89 @@
+<app-header></app-header>
+<header>
+    <nav class="container">
+        <ul>
+            <li><a [routerLink]="['/elements/trailsw']" routerLinkActive="active">Tatry Zachodnie</a></li>
+            <li class="current"><a [routerLink]="['/elements/trailse']" routerLinkActive="active">Tatry Wschodnie</a></li>
+
+        </ul>
+
+    </nav>
+</header>
+<section>
+    <div class="container tatry">
+        <h3 class="mt-2 mb-2"><b> Spis szlaków Tatr wschodnich </b></h3>
+        <table class="table table-striped">
+            <tbody>
+
+                <tr>
+                    <th>Trasa</th>
+                    <th>Szlak</th>
+                    <th>Czas</th>
+                </tr>
+                <tr>
+                    <td>Ścieżka nad Reglami</td>
+                    <td>Czerwony</td>
+                    <td>1,5h</td>
+                </tr>
+                <tr>
+                    <td>Droga pod Reglami</td>
+                    <td>Czarny</td>
+                    <td>3h</td>
+                </tr>
+                <tr>
+                    <td>Przez Dolinę Białego</td>
+                    <td>Niebieski</td>
+                    <td>4,5h</td>
+                </tr>
+                <tr>
+                    <td>Przez Dolinę za Bramką</td>
+                    <td>Zielony</td>
+                    <td>0,20h</td>
+                </tr>
+                <tr>
+                    <td>Przez Dolinę Lejową</td>
+                    <td>Zielony</td>
+                    <td>1,5h</td>
+                </tr>
+                <tr>
+                    <td>Do Jaskini Dziury przez Dolinę ku Dziurze</td>
+                    <td>Czarny</td>
+                    <td>2h</td>
+                </tr>
+                <tr>
+                    <td>Na Sarnią Skałę z Czerwonej Przełęczy</td>
+                    <td>Czerwony</td>
+                    <td>3,5h</td>
+                </tr>
+                <tr>
+                    <td>Na Halę Ornak z Polany Chochołowskiej</td>
+                    <td>Niebieski</td>
+                    <td>1,5h</td>
+                </tr>
+                <tr>
+                    <td>Na Przełęcz Zawracie z Polany Chochołowskiej</td>
+                    <td>Czerwony</td>
+                    <td>2h</td>
+                </tr>
+                <tr>
+                    <td>Na Trzydniowiański i Kończysty Wierch z Polany Trzydniówki</td>
+                    <td>Czerwony</td>
+                    <td>0,45h</td>
+                </tr>
+                <tr>
+                    <td>Na Grzesia, Rakoń i Wołowiec z Polany Chochołowskiej</td>
+                    <td>Zielony</td>
+                    <td>3,5h</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</section>
+<section>
+    <div class="container mt-2 mb-4 img">
+        <img src="assets/img/mapa.png"></div>
+</section>
+
+<app-newsletter></app-newsletter>
+<app-footer></app-footer>
