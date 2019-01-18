@@ -41,3 +41,7 @@ header a:hover {
     font-weight: bold;
     text-decoration: none;
 }
+
+h1 {
+    margin-bottom: 8px !important;
+}
