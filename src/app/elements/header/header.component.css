@@ -1,7 +1,7 @@
 header {
     background: #000033;
     color: white;
-    padding-top: 30px;
+    padding-top: 15px;
     min-height: 70px;
     border-bottom: #CC0033 3px solid;
 }
@@ -44,4 +44,5 @@ header a:hover {
 
 h1 {
     margin-bottom: 8px !important;
+    margin-block-start: -8px !important;
 }
