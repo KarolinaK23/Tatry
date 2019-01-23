@@ -2,27 +2,29 @@
 </app-header>
 <section class="container">
     <div class="">
-        <h3 style="margin-top: 20px;">Kontakt</h3>
+        <h3 style="margin-top: 20px;" id="form1">Kontakt</h3>
     </div>
-    <div class="row col-md-6"><label><h5>{{administrator }} -Administrator</h5>
+    <div class="row col-md-6"><label id="form1"><h5>{{administrator }} -Administrator</h5>
   <p>kkukla153153@gmail.com</p></label></div>
 
 </section>
 <section class="container">
     <form method="post">
-        <div class="">
-            <h3 style="margin-top: 20px;">Formularz kontaktowy</h3>
+        <div class="form">
+            <h3 style="margin-top: 20px;" id="form1">Formularz kontaktowy</h3>
         </div>
 
-        <div class="row"><label>Imię i nazwisko</label> </div>
+        <div class="row"><label id="form">Imię i nazwisko</label> </div>
         <div class="row"><input [value]="inputText" [maxLength]="maxLength" (click)="change()" type="text" name="name" class="form control" style="width:70%"></div>
-        <div class="row"><label>Twoj email </label></div>
+        <div class="row"><label id="form">Twój email </label></div>
         <div class="row"><input [value]="inputEmail" (click)="change()" type="text" name="email" class="form control" style="width:70%"></div>
-        <div class="row"><label>Treść Twojej wiadomości</label></div>
+        <div class="row"><label id="form">Treść Twojej wiadomości</label></div>
         <div class="row"><textarea type="text" name="message" class="form control" style="width:70%" cols="40" rows="10"> </textarea>
         </div>
-        <div> <button class="btn btn-danger mr-5 mt-5" name="submit" [disabled]='isDisable'>Wyślij</button>
+        <div class="row">
+            <button class="btn btn-danger mt-5 header" name="submit" [disabled]='isDisable'>Wyślij</button>
         </div>
+
     </form>
 </section>
 
