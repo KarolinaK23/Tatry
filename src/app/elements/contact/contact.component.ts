@@ -8,8 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit {
 
   administrator = 'Karolina Kukla';
-  webmaster = 'Karolina Kukla';
-  developer = 'Karolina Kukla';
+
   isDisable = true;
   inputText = 'Jan Kowalski';
   maxLength = 5;
