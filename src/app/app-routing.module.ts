@@ -1,3 +1,4 @@
+import { LoginComponent } from './elements/auth/login/login.component';
 import { AccomodationComponent } from './elements/accomodation/accomodation.component';
 import { GuidebookComponent } from './elements/guidebook/guidebook.component';
 import { ContactComponent } from './elements/contact/contact.component';
@@ -18,7 +19,8 @@ const routes: Routes = [
     {path: 'guidebook', component: GuidebookComponent},
     {path: 'trailsw', component: TrailswComponent},
     {path: 'accomodation', component: AccomodationComponent},
-    {path: 'peaks', component: PeaksComponent}
+    {path: 'peaks', component: PeaksComponent},
+    {path: 'auth/login', component: LoginComponent}
   ]}
 ];
 

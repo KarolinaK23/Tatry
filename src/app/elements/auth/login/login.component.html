@@ -1,0 +1,18 @@
+<app-header></app-header>
+<section class="container">
+    <h3 style="margin-top: 20px; margin-bottom: 20px; margin-left: 1%">Logowanie</h3>
+</section>
+<section class="container">
+
+    <form (ngSubmit)="login(formData)" #formData="ngForm">
+        <div class="row col-6" style="display: inline-grid; margin: 10px">
+            <div class="row"> <label>E-mail</label> </div>
+            <div class="row"><input ngModel type="email" name="email" required class="control"> </div>
+            <div class="row"><label>Hasło</label></div>
+            <div class="row"> <input ngModel type="password" name="password" required class="control"> </div>
+            <div class="row"> <button class="btn btn-danger  mt-5" type="submit" [disabled]="formData.invalid">Zaloguj</button> </div>
+            <div class="row"> <button class="btn btn-danger mt-5" style="display:inline" type="button" [disabled]="formData.invalid" (click)="signup(formData)">Rejestracja</button></div>
+        </div>
+    </form>
+
+</section>

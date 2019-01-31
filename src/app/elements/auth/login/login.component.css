@@ -1,0 +1,9 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+}
+
+.control {
+    width: 500px;
+}

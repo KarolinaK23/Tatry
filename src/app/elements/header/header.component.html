@@ -11,7 +11,11 @@
                 <li> <a [routerLink]="['/elements/peaks']" routerLinkActive="active"> Szczyty </a> </li>
                 <li> <a [routerLink]="['/elements/guidebook']" routerLinkActive="active">Poradnik turysty </a> </li>
                 <li> <a [routerLink]="['/elements/contact']" routerLinkActive="active">Kontakt </a> </li>
+                <li> <a *ngIf="!authService" [routerLink]="['/elements/auth/login']" routerLinkActive="active">Zaloguj </a> </li>
+                <!-- <li> <a *ngIf="authService.user" (click)="logout()">Wyloguj </a> </li>
+                <span *ngIf="authService.user">Witaj {{authService.user.email}}</span> -->
             </ul>
         </nav>
+
     </div>
 </header>
